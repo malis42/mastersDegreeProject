@@ -54,8 +54,6 @@ Route::resource('customers', 'CustomersController');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::resource('measures', 'MeasuresController');
 
 Route::resource('patients', 'PatientsController')->middleware('auth');

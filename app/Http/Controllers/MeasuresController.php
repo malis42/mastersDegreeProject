@@ -15,11 +15,9 @@ class MeasuresController extends Controller
         if($request->ajax()){
 
         } else {
-            /*$hashed_email = Hash::make('test@test.com');*/
             # User hash hard-coded below is a hash for password 'testing123' hashed with md5
             #$userHash= '$2y$10$70UfLceNDKb.QcT5Wu2i/O43lU3UHxZZ9jlyyTTf3tt8ucXe3tZge';
             $userHash = (string)md5(Auth::user()->email);
-            #dd($userHash);
 
             #$latestMeasure = Measure::latestUserMeasure($userHash);
             $latestMeasure = Measure::where('user_hash', $userHash)
@@ -33,10 +31,6 @@ class MeasuresController extends Controller
                 ->take('1000')
                 ->get();
 
-            //dd($latestMeasure->measure);
-            //dd($remainingMeasures->count());
-
-            //dd($latestMeasure);
             return view('measures.index', compact('latestMeasure', 'remainingMeasures'));
         }
 
