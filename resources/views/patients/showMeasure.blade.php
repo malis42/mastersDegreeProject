@@ -55,8 +55,8 @@
                         yAxes: [{
                             ticks: {
                                 beginAtZero: true,
-                                min: Math.round((yAxisMin - 0.1)*100)/100,
-                                max: Math.round((yAxisMax + 0.1)*100)/100,
+                                min: yAxisMin - 0.02,
+                                max: yAxisMax + 0.02,
                                 step: 10
                             }
                         }]

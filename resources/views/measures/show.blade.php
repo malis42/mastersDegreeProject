@@ -54,8 +54,8 @@
                     yAxes: [{
                         ticks: {
                             beginAtZero: true,
-                            min: yAxisMin - 0.1,
-                            max: yAxisMax + 0.1,
+                            min: yAxisMin - 0.02,
+                            max: yAxisMax + 0.02,
                             step: 10
                         }
                     }]
