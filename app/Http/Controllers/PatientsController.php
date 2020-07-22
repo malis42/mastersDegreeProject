@@ -40,10 +40,6 @@ class PatientsController extends Controller
             ->take('1000')
             ->get();
 
-        //dd($latestMeasure->measure);
-        //dd($remainingMeasures->count());
-
-        //dd($latestMeasure);
         return view('patients.show', compact('latestMeasure', 'remainingMeasures', 'id'));
     }
 
@@ -60,6 +56,6 @@ class PatientsController extends Controller
             ->where('id', $measureId)
             ->first();
 
-        return view('patients.showMeasure', compact('measure', 'id'));
+        return view('patients.showMeasure', compact('measure', 'id', 'user'));
     }
 }

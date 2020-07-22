@@ -9,7 +9,8 @@
         </div>
     </div>
 
-    <h3>Your measure number {{ $measure->id }}</h3>
+    <h3>Patient: {{ $user->full_name }}</h3>
+    <h3>Measure number: {{ $measure->id }}</h3>
     <div class="row">
         <div class="col-12">
             @if($measure)
