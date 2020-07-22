@@ -8,7 +8,7 @@
             <h1 style="color: #3a8184;"><strong>About author</strong></h1>
             <div class="row">
                 <div class="col-9">
-                    <h2>Mateusz Lis</h2>
+                    <h2><strong>Mateusz Lis</strong></h2>
                     <h3>I'm an undergraduate at University of Science and Technology in Cracow, Poland. I graduated in Biomedical Engineering back in 2018, currently finishing my master's degree course in Biomechanics and Robotics.</h3>
                     <br>
                     <a href="https://www.linkedin.com/in/mateusz-lis-60aa17140/" class="btn btn-outline-info">
