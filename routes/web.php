@@ -50,11 +50,10 @@ Route::patch('customers/{customer}', 'CustomersController@update');
 Route::delete('customers/{customer}', 'CustomersController@destroy');*/
 
 // Refactor all of the routes above with single line due to following REST rules
-Route::resource('customers', 'CustomersController');
+Route::resource('measures', 'MeasuresController');
 
 Auth::routes();
 
-Route::resource('measures', 'MeasuresController');
 
 Route::resource('patients', 'PatientsController')->middleware('auth');
 
