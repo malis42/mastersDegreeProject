@@ -3,8 +3,7 @@
 @section('title', 'Contact Us')
 
 @section('content')
-    <h1>Contact us!</h1>
-
+    <h1 style="color: #3a8184;"><strong>Contact us!</strong></h1>
     @if(!session()->has('message'))
         <form action="{{ route('contact.store') }}" method="POST">
             <div class="form-group pb-2">

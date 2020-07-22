@@ -9,7 +9,8 @@
         </div>
     </div>
 
-    <h3>Your measure number {{ $measure->id }}</h3>
+    <h3>Patient: {{ $user->full_name }}</h3>
+    <h3>Measure number: {{ $measure->id }}</h3>
     <div class="row">
         <div class="col-12">
             @if($measure)
@@ -54,8 +55,8 @@
                         yAxes: [{
                             ticks: {
                                 beginAtZero: true,
-                                min: Math.round((yAxisMin - 0.1)*100)/100,
-                                max: Math.round((yAxisMax + 0.1)*100)/100,
+                                min: yAxisMin - 0.02,
+                                max: yAxisMax + 0.02,
                                 step: 10
                             }
                         }]

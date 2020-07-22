@@ -25,8 +25,6 @@ class HomeController extends Controller
      */
     public function index()
     {
- /*       $currentUser = Auth::user();
-        dd($currentUser);*/
         return view('home');
     }
 
