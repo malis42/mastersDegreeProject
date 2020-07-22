@@ -30,6 +30,7 @@
         </main>
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://kit.fontawesome.com/cca034b9e6.js" crossorigin="anonymous"></script>
     @yield('scripts')
 </body>
 </html>

@@ -11,7 +11,7 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="{{ route('about.index') }}" class="nav-item nav-link">About us</a>
+                    <a href="{{ route('about.index') }}" class="nav-item nav-link">About project</a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('contact.create') }}" class="nav-item nav-link">Contact</a>
